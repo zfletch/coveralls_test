@@ -3,16 +3,17 @@ defmodule CoverallsTest do
   Documentation for CoverallsTest.
   """
 
-  @doc """
-  Hello world.
+  def add_one(num)
+  when is_integer(num) do
+    num + 1
+  end
 
-  ## Examples
+  def add_num(num, inc \\ 1)
+  when is_integer(num) and is_integer(inc) do
+    num + inc
+  end
 
-      iex> CoverallsTest.hello
-      2
-
-  """
-  def hello do
-    1 + 1
+  def add_num_one_line(num, inc \\ 1) when is_integer(num) and is_integer(inc) do
+    num + inc
   end
 end
