@@ -3,6 +3,6 @@ defmodule CoverallsTestTest do
   doctest CoverallsTest
 
   test "greets the world" do
-    assert CoverallsTest.hello() == :world
+    assert CoverallsTest.hello() == 2
   end
 end

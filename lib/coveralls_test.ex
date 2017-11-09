@@ -9,10 +9,10 @@ defmodule CoverallsTest do
   ## Examples
 
       iex> CoverallsTest.hello
-      :world
+      2
 
   """
   def hello do
-    :world
+    1 + 1
   end
 end
